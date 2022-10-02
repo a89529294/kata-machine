@@ -122,6 +122,7 @@ class MyLinkedList {
             prevNode!.next = nextNode;
             if (!nextNode) this.tail = prevNode;
         }
+        currNode!.next = null;
     }
 }
 const myLinkedList = new MyLinkedList();
